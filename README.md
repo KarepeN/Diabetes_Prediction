@@ -10,7 +10,6 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 <img src="Nithya.jpg" alt="drawing" width="150" style="border-radius:50%" />
 [Nithya Karepe](https://github.com/KarepeN)
 
-    <img src="vani.jpg.png" alt="drawing" width="150" style="border-radius:50%" />   
     
     
   
@@ -19,4 +18,5 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 
 [Sri Vasavi Vipparla](https://github.com/Srivasavi-vipparla)  
 
-
+ [Shivani Tangellapally](https://github.com/shivani-ta)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ <img src="vani.jpg" alt="drawing" width="150" style="border-radius:50%" />
