@@ -25,9 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/diabetes_prediction/BmiActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/diabetes_prediction/BmiActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,9 +252,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1164" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614996714425" />
-    <state x="120" y="0" key="SettingsEditor" timestamp="1615005072861">
+    <state x="120" y="0" key="SettingsEditor" timestamp="1615005098824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="120" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1615005072861" />
+    <state x="120" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1615005098824" />
   </component>
 </project>

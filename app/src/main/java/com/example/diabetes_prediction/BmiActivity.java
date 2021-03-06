@@ -33,18 +33,17 @@ public class BmiActivity extends AppCompatActivity {
             double weight = Double.parseDouble(radiusET.getText().toString());
 
 
-            if(weight>0 && height>0) {
-                double a =  weight/ Math.pow(height, 2);
+            if (weight > 0 && height > 0) {
+                double a = weight / Math.pow(height, 2);
 
                 displayTV.setText("BMI " + new DecimalFormat("##.##").format(a));
-            }
-            else{
+            } else {
 
                 displayTV.setText("Enter non-negative values greater than 0");
             }
-        }
-        catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             Log.d("Input", "Failed");
             displayTV.setText("Enter the Values");
         }
     }
+}
