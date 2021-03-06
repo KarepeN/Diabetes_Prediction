@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Prediction">
 
-    <Button
+   <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="632dp"
         android:hint="glucose level"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="176dp"
         android:hint="blood pressure"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="340dp"
         android:hint="insulin"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,7 +73,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="256dp"
         android:hint="skin thickness"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +88,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="420dp"
         android:hint="weight"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +103,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="92dp"
         android:hint="height"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="488dp"
         android:hint="age"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,28 +130,15 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginBottom="560dp"
+        android:layout_marginBottom="568dp"
         android:hint="diabetes pedegree function"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView7" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
-        android:layout_marginBottom="684dp"
-        android:fontFamily="cursive"
-        android:text="cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
 
@@ -161,7 +148,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="16dp"
         android:hint="result"
-        android:textColor="@android:color/white"
+
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
