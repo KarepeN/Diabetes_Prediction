@@ -5,6 +5,7 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 
 
 
+
 ## Contributors :
 
 <img src="Nithya.jpg" alt="drawing" width="150" style="border-radius:50%" />
@@ -20,4 +21,4 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 
  
  <img src="vani.jpg" alt="drawing" width="150" style="border-radius:50%" />
- [Shivani Tangellapally](https://github.com/shivani-ta) 
+(https://github.com/shivani-ta) 
