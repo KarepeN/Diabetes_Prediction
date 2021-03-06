@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Diabetes_Prediction</string>
+    <string name="title_activity_location_">Map</string>
+    <string name="pick_time">Set Reminder</string>
+</resources>
