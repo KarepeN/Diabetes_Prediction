@@ -13,7 +13,7 @@
         android:layout_marginLeft="140dp"
         android:layout_marginBottom="4dp"
         android:fontFamily="cursive"
-        android:onClick="Prediction"
+        android:onClick="Pre"
         android:text="predict"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,26 +147,25 @@
         android:layout_marginLeft="140dp"
         android:layout_marginBottom="684dp"
         android:fontFamily="cursive"
-        android:onClick="home"
-        android:text="home"
+        android:text="cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
+    <TextView
 
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="16dp"
         android:hint="result"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent" />
 
 
