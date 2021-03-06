@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Prediction">
 
     <Button
         android:id="@+id/button1"
@@ -13,7 +13,7 @@
         android:layout_marginLeft="140dp"
         android:layout_marginBottom="4dp"
         android:fontFamily="cursive"
-        android:onClick="diabetesPrediction"
+        android:onClick="Prediction"
         android:text="predict"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
