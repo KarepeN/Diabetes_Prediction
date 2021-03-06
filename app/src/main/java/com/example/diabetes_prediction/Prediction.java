@@ -9,7 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Prediction extends AppCompatActivity {
-    private Button button;
+     private Button button;
+    int fCode=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +27,9 @@ public class Prediction extends AppCompatActivity {
 
     }
 
-    public void onClick(View v) {
-        button.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
+    public void onclickcancelBtn(View v){
+        Intent resultint = new Intent(this,MainActivity.class);
+        setResult(fCode,resultint);
+        finish();
+     }
 }
