@@ -10,14 +10,28 @@ import android.widget.TextView;
 
 public class Prediction extends AppCompatActivity {
     private Button button;
-    private EditText txtw;
+    private TextView txtw;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prediction);
         button = (Button) findViewById(R.id.button1);
-        TextView txtvw = (TextView) findViewById(R.id.textView9);
-
-
+        TextView txtvw = findViewById(R.id.textView9);
+        button = (Button) findViewById(R.id.button);
     }
-}
+        public void Pre(View v){
+
+
+            txtw.setText("positive");
+
+        }
+
+    public void onClick(View v) {
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+    }
