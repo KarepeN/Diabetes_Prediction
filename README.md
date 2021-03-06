@@ -11,8 +11,8 @@ The project helps in identifying whether a person has diabetes or not, if the pe
     
     
   
-  [Nithya Karepe](https://github.com/KarepeN) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-  [Shivani Tangellapally](https://github.com/shivani-ta)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  [Sri Vasavi Vipparla](https://github.com/Srivasavi-vipparla)  
+ <img src="vasu .png" alt="drawing" width="150" style="border-radius:50%" />
+
+[Sri Vasavi Vipparla](https://github.com/Srivasavi-vipparla)  
 
 
