@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class ExerciseActivity extends AppCompatActivity {
 ImageView imgback;
-    CardView video1 ;
+    CardView video1, video2, video3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ ImageView imgback;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
         video1 = findViewById(R.id.video1);
-        
+
         imgback  = findViewById(R.id.imgBack);
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,7 @@ ImageView imgback;
         });
 
         video1.setOnClickListener(v -> playVideo("HZH4QASD3ss"));
-       
+
 
     }
 
