@@ -1,4 +1,3 @@
-
 package com.example.diabetes_prediction;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         exercise = findViewById(R.id.btnExercise);
         exercise.setOnClickListener(v -> outAction());
         location = findViewById(R.id.btnLocation);
+        medicine=findViewById(R.id.btnMedicine);
+        medicine.setOnClickListener(v -> medicineReminder(v));
         location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
         Intent explicit = new Intent(MainActivity.this, BmiActivity.class);
         startActivity(explicit );
 
+
+    }
+    public void medicineReminder(View v){
+        Intent explicit = new Intent(MainActivity.this, MainPage.class);
+        startActivity(explicit );
 
     }
 
