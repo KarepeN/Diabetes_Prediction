@@ -23,7 +23,7 @@ public class Prediction extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bmi);
+        setContentView(R.layout.activity_prediction);
         etGlucose = findViewById(R.id.etGlucose);
         etBlood = findViewById(R.id.etBloodP);
         etSkin = findViewById(R.id.etSkinThick);
