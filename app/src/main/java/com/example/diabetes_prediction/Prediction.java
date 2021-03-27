@@ -40,17 +40,8 @@ public class Prediction extends AppCompatActivity {
 
     }
 
-    @SuppressLint("SetTextI18n")
-    private void Predict() {
+    public void predict(View v) {
 
-        int glucose = Integer.parseInt(etGlucose.getText().toString());
-        int blood = Integer.parseInt(etBlood.getText().toString());
-        int skin = Integer.parseInt(etSkin.getText().toString());
-        int insulin = Integer.parseInt(etInsulin.getText().toString());
-        int weight = Integer.parseInt(etWeight.getText().toString());
-        int height = Integer.parseInt(etHeight.getText().toString());
-        int diabetes = Integer.parseInt(etDiabetesFunc.getText().toString());
-        int age = Integer.parseInt(etAge.getText().toString());
 
 
         tvResult.setText("Result: Diabetes Active");
