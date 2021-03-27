@@ -2,14 +2,11 @@ package com.example.diabetes_prediction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -17,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Prediction extends AppCompatActivity {
+    int fCode=1;
     ImageView imgBack;
     EditText etGlucose, etBlood, etSkin, etInsulin, etWeight, etHeight, etDiabetesFunc, etAge;
     Button btnPredict;
@@ -25,7 +23,7 @@ public class Prediction extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prediction);
+        setContentView(R.layout.activity_bmi);
         etGlucose = findViewById(R.id.etGlucose);
         etBlood = findViewById(R.id.etBloodP);
         etSkin = findViewById(R.id.etSkinThick);
@@ -48,4 +46,11 @@ public class Prediction extends AppCompatActivity {
 
 
     }
+
+    public void onclickcancelBtn(View v){
+        Intent resultint = new Intent(this,Prediction.class);
+        setResult(fCode,resultint);
+        finish();
+    }
+
 }
