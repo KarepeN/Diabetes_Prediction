@@ -2,48 +2,56 @@ package com.example.diabetes_prediction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
 public class BmiActivity extends AppCompatActivity {
 
+    ImageView imgBack;
+    EditText height,weight;
+    Button calculateBtn;
+    TextView bmiTV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_bmi);
+        imgBack = findViewById(R.id.imgBack);
+        height = findViewById(R.id.etHeight);
+        weight = findViewById(R.id.etWeight);
+        calculateBtn = findViewById(R.id.btnCalculate);
+        bmiTV = findViewById(R.id.tvResult);
+        imgBack.setOnClickListener(v -> onBackPressed());
+        calculateBtn.setOnClickListener(v -> {
 
-        TextView displayTV = findViewById(R.id.displayTV);
-        displayTV.setText("BMI");
+                calculateBMI();
+
+
+                Toast.makeText(BmiActivity.this, "Please Enter All Info..", Toast.LENGTH_SHORT).show();
+
+        });
+
+
+
+
+    }
+    private void calculateBMI()
+    {
+
+        bmiTV.setText("89");
+
+
 
     }
 
 
-    public void computeAction(View v) {
-        TextView displayTV = findViewById(R.id.displayTV);
-        EditText heightET = findViewById(R.id.heightET);
-        EditText radiusET = findViewById(R.id.weightET);
-        String current = displayTV.getText().toString();
-        try {
-            double height = Double.parseDouble(heightET.getText().toString());
-            double weight = Double.parseDouble(radiusET.getText().toString());
-
-
-            if (weight > 0 && height > 0) {
-                double a = weight / Math.pow(height, 2);
-
-                displayTV.setText("BMI " + new DecimalFormat("##.##").format(a));
-            } else {
-
-                displayTV.setText("Enter non-negative values greater than 0");
-            }
-        } catch (NumberFormatException e) {
-            Log.d("Input", "Failed");
-            displayTV.setText("Enter the Values");
-        }
-    }
 }
