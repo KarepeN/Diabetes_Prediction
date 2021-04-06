@@ -31,7 +31,7 @@
             android:layout_height="40dp"
             android:id="@+id/etSearch"
             android:layout_marginStart="5dp"
-            android:background="@drawable/search"
+
             android:layout_marginBottom="5dp"
 
             />
@@ -40,7 +40,7 @@
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_baseline_search_24"/>
+            />
     </LinearLayout>
 
 
@@ -58,7 +58,7 @@
         android:layout_margin="20dp"
         android:id="@+id/floatBtn"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_baseline_location_on_24"
+
         android:visibility="gone"
         android:tint="@color/white"/>
 
