@@ -28,13 +28,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="" />
+    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_location_on_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_XL_Edited_2_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -76,7 +82,7 @@
     <property name="android-custom-viewC:/Users/Hunt/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="multi-representation-previewC:/Users/Hunt/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
@@ -89,13 +95,14 @@
     <key name="android.template.-641413401">
       <recent name="com.example.diabetes_prediction" />
     </key>
-    <key name="android.template.-122877989">
-      <recent name="com.example.diabetes_prediction" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.diabetes_prediction" />
     </key>
+    <key name="android.template.-122877989">
+      <recent name="com.example.diabetes_prediction" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\S540791\Diabetes_Prediction\app\src\main\res\drawable" />
       <recent name="C:\Users\Hunt\Downloads\Diabetes_Prediction-main (2)\Diabetes_Prediction-main\app\src\main\res\drawable" />
       <recent name="C:\Users\Hunt\Downloads\Diabetes_Prediction-main (2)\Diabetes_Prediction-main\app\src\main\java\com\example\diabetes_prediction" />
       <recent name="C:\Users\Hunt\Downloads\Diabetes_Prediction-main (2)\Diabetes_Prediction-main\app\src\main\res\layout" />
@@ -312,9 +319,10 @@
     </state>
     <state x="120" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1615005098824" />
     <state x="144" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1616320390088" />
-    <state x="590" y="195" key="chooseDestDirectoryDialog" timestamp="1616401601530">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="492" y="159" key="chooseDestDirectoryDialog" timestamp="1617817524871">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="492" y="159" key="chooseDestDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1617817524871" />
     <state x="590" y="195" key="chooseDestDirectoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1616401601530" />
     <state x="426" y="191" key="run.anything.popup" timestamp="1616357018746">
       <screen x="0" y="0" width="1536" height="834" />
