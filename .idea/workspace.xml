@@ -28,10 +28,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/diabetes_prediction/LocationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/diabetes_prediction/LocationActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +76,7 @@
     <property name="android-custom-viewC:/Users/Hunt/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/Diabetes_Prediction-main (3)/Diabetes_Prediction-main" />
     <property name="multi-representation-previewC:/Users/Hunt/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
@@ -287,10 +284,10 @@
     </state>
     <state x="465" y="149" key="AndroidCreateXmlResourceDialog/0.0.1280.680@0.0.1280.680" timestamp="1614996433297" />
     <state x="558" y="183" key="AndroidCreateXmlResourceDialog/0.0.1536.834@0.0.1536.834" timestamp="1616401626421" />
-    <state x="458" y="140" key="FileChooserDialogImpl" timestamp="1617817711319">
+    <state x="458" y="140" key="FileChooserDialogImpl" timestamp="1618444443626">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="458" y="140" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1617817711319" />
+    <state x="458" y="140" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1618444443626" />
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1616404825497" />
     <state width="1491" height="22" key="GridCell.Tab.0.bottom" timestamp="1616405754450">
       <screen x="0" y="0" width="1536" height="834" />
