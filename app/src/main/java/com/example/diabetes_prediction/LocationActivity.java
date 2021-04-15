@@ -1,14 +1,20 @@
 
 package com.example.diabetes_prediction;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
+import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,12 +23,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 
 import java.io.IOException;
 import java.util.List;
@@ -31,10 +45,32 @@ import java.util.Locale;
 public class LocationActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener {
     GoogleMap mgoogleMap;
     EditText etSearch;
+    ImageView imgBack;
+    boolean isPermissionGranted;
+    
+    FloatingActionButton floatButton;
+    private FusedLocationProviderClient mLocationClient;
+    private final int GPS_REQUEST_CODE = 9001;
+    
+    ImageView btnSearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+        floatButton = findViewById(R.id.floatBtn);
+
+        etSearch = findViewById(R.id.etSearch);
+        btnSearch = findViewById(R.id.btnSearch);
+        checkMyPermission();
+
+
+        mLocationClient = new FusedLocationProviderClient(this);
+        floatButton.setOnClickListener(v -> getCurrentLocation());
+
+        imgBack = findViewById(R.id.imgBack);
+        imgBack.setOnClickListener(v -> finish());
+        btnSearch.setOnClickListener(this::geolocate);
+   
     }
 
     public static void hideKeyboard(Activity activity) {
@@ -71,7 +107,46 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
             e.printStackTrace();
         }
     }
+    private void checkMyPermission()
+    {
+        Dexter.withContext(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener() {
+            @Override
+            public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
 
+                Toast.makeText(LocationActivity.this, "permission Granted", Toast.LENGTH_SHORT).show();
+                isPermissionGranted = true;
+            }
+
+            @Override
+            public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
+
+                Intent intent = new Intent();
+                intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                Uri uri = Uri.fromParts("package",getPackageName(),"");
+                intent.setData(uri);
+                startActivity(intent);
+
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
+
+                permissionToken.continuePermissionRequest();
+            }
+        }).check();
+    }
+
+    @SuppressLint("MissingPermission")
+    private void getCurrentLocation() {
+        mLocationClient.getLastLocation().addOnCompleteListener(task -> {
+            if (task.isSuccessful())
+            {
+                Location location = task.getResult();
+                gotoLocation(location.getLatitude(),location.getLongitude());
+
+            }
+        });
+    }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
