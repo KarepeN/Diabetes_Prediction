@@ -28,13 +28,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="" />
+    <list default="true" id="f7976d60-3c07-41e8-8555-f8f8a5f095ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_6_Edited_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -89,10 +91,10 @@
     <key name="android.template.-641413401">
       <recent name="com.example.diabetes_prediction" />
     </key>
-    <key name="android.template.-122877989">
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.diabetes_prediction" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="android.template.-122877989">
       <recent name="com.example.diabetes_prediction" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
