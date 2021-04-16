@@ -9,6 +9,9 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 ## MedicalReminder.java 
 In this class, As we have to set a reminder for medicines I have used Time Picker class in 25 hour mode and also DateFormat (have done imports)
 
+## DateTypeConverter.java
+In this class, the methods returns date and time of reminder which is set.
+
 ## Reminders.java 
 
 
