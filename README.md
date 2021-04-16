@@ -12,6 +12,9 @@ In this class, As we have to set a reminder for medicines I have used Time Picke
 ## DateTypeConverter.java
 In this class, the methods returns date and time of reminder which is set.
 
+## RoomDAO.java
+When you use the Room persistence library to store your app's data, you interact with the stored data by defining data access objects, or DAOs. Each DAO includes methods that offer abstract access to your app's database. Create insert, delete, update queries.
+
 ## Reminders.java 
 
 
