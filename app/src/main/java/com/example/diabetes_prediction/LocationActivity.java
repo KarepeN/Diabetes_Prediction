@@ -62,7 +62,8 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         etSearch = findViewById(R.id.etSearch);
         btnSearch = findViewById(R.id.btnSearch);
         checkMyPermission();
-
+        isGPSEnabled();
+        initMap();
 
         mLocationClient = new FusedLocationProviderClient(this);
         floatButton.setOnClickListener(v -> getCurrentLocation());
@@ -158,6 +159,43 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         mgoogleMap = googleMap;
         mgoogleMap.setMyLocationEnabled(true);
 
+    }
+      private void initMap(){
+        if (isPermissionGranted)
+        {
+
+                SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapFragment);
+                assert supportMapFragment != null;
+                supportMapFragment.getMapAsync(this);
+
+
+
+
+        }
+    }
+    
+       private boolean isGPSEnabled()
+    {
+        LocationManager locationManager  = (LocationManager) getSystemService(LOCATION_SERVICE);
+        boolean provider = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        if (provider)
+        {
+            return true;
+        }
+        else
+        {
+            AlertDialog alertDialog = new AlertDialog.Builder(this).
+                    setTitle("GPS permission")
+                    .setMessage("Gps Required for this app to work")
+                    .setPositiveButton("Yes",((dialog, which) -> {
+                        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        startActivityForResult(intent,GPS_REQUEST_CODE);
+                    })).setCancelable(false)
+                    .show();
+
+
+        }
+        return false;
     }
 
 
