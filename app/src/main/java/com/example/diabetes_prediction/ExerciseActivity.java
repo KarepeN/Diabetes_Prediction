@@ -18,6 +18,8 @@ ImageView imgback;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
         video1 = findViewById(R.id.video1);
+        video2 = findViewById(R.id.video2);
+        video3 = findViewById(R.id.video3);
 
         imgback  = findViewById(R.id.imgBack);
         imgback.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +30,8 @@ ImageView imgback;
         });
 
         video1.setOnClickListener(v -> playVideo("HZH4QASD3ss"));
+        video2.setOnClickListener(v -> playVideo("J7h-5PGbGVc"));
+         video3.setOnClickListener(v -> playVideo("ePylP2XmNRs"));
 
 
     }
