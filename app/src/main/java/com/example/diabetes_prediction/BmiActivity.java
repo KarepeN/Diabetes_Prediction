@@ -32,12 +32,16 @@ public class BmiActivity extends AppCompatActivity {
         bmiTV = findViewById(R.id.tvResult);
         imgBack.setOnClickListener(v -> onBackPressed());
         calculateBtn.setOnClickListener(v -> {
-
+            if (!height.getText().toString().isEmpty() && !weight.getText().toString().isEmpty())
+            {
+                hideKeyboard(this);
                 calculateBMI();
-
-
+            }
+            else
+            {
+                hideKeyboard(this);
                 Toast.makeText(BmiActivity.this, "Please Enter All Info..", Toast.LENGTH_SHORT).show();
-
+            }
         });
 
 
@@ -46,12 +50,12 @@ public class BmiActivity extends AppCompatActivity {
     }
     private void calculateBMI()
     {
-
-        bmiTV.setText("89");
+        double weight1 = Double.parseDouble(weight.getText().toString());
+        weight1 *= 2.205;
+        double height1 = Double.parseDouble(height.getText().toString());
+        double result = (703*weight1/(height1*height1));
+        bmiTV.setText("your BMI: "+String.format("%.2f", result));
 
 
 
     }
-
-
-}
