@@ -6,6 +6,9 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 ## Excercise Activity
 > In this Module, we are adding the diabetes excercise videos   
 
+## Location Activity
+> This module will display the current location
+
 ## MedicalReminder.java 
 In this class, As we have to set a reminder for medicines I have used Time Picker class in 25 hour mode and also DateFormat (have done imports)
 
