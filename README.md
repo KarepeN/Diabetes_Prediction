@@ -6,9 +6,17 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 ## Excercise Activity
 > In this Module, we are adding the diabetes excercise videos   
 
+## MedicalReminder.java 
+In this class, As we have to set a reminder for medicines I have used Time Picker class in 25 hour mode and also DateFormat (have done imports)
+
+## Reminders.java 
+
+
 ## Contributors :
 
 <img src="Nithya.jpg" alt="drawing" width="150" style="border-radius:50%" />
+
+
 [Nithya Karepe](https://github.com/KarepeN)
 
     
@@ -21,4 +29,6 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 
  
  <img src="vani.jpg" alt="drawing" width="150" style="border-radius:50%" />
+ 
+ 
  [Shivani Tangellapally](https://github.com/shivani-ta) 
