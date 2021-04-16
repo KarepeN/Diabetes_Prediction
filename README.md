@@ -9,6 +9,12 @@ The project helps in identifying whether a person has diabetes or not, if the pe
 ## MedicalReminder.java 
 In this class, As we have to set a reminder for medicines I have used Time Picker class in 25 hour mode and also DateFormat (have done imports)
 
+## DateTypeConverter.java
+In this class, the methods returns date and time of reminder which is set.
+
+## RoomDAO.java
+When you use the Room persistence library to store your app's data, you interact with the stored data by defining data access objects, or DAOs. Each DAO includes methods that offer abstract access to your app's database. Create insert, delete, update queries.
+
 ## Reminders.java 
 
 
