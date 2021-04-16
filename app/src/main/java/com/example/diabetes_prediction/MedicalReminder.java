@@ -42,10 +42,12 @@ public class MedicalReminder extends AppCompatActivity {
 
             // Create a new instance of TimePickerDialog and return it
             return new TimePickerDialog(getActivity(), this, hour, minute,
+                    //using 24hours format
                     DateFormat.is24HourFormat(getActivity()));
         }
 
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+            //Displays hours and minutes
             setTimeDisplayText(hourOfDay, minute);
 
         }
