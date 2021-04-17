@@ -19,6 +19,7 @@
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:src="@drawable/ic_baseline_keyboard_backspace_24"
             android:layout_gravity="center_vertical"
             app:tint="@color/white"
