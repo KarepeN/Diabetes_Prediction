@@ -19,19 +19,17 @@ In this class, the methods returns date and time of reminder which is set.
 When you use the Room persistence library to store your app's data, you interact with the stored data by defining data access objects, or DAOs. Each DAO includes methods that offer abstract access to your app's database. Create insert, delete, update queries.
 
 ## Reminders.java 
-
+This is the entity class for the reminder table with its fields
 
 
 ## UserPassword.java
-
-
+This is the entity class for the login table with its fields
 
 ## AdapterReminders.java
-
-
+Is the adapter class that handles the list of reminders using the Recycler view. It has the text views for message and time.
 
 ## AppDatabase.java
-
+This is an abstract class which extends the RoomDatabase from the androidx library. This class has methods to build the DB instance and get the appDatabase.
 
 
 ## Contributors :
