@@ -19,6 +19,10 @@
         <activity android:name=".VideoActivity"/>
         <activity android:name=".ExerciseActivity" />
         <activity android:name=".LocationActivity" />
+        <activity android:name=".BmiActivity" />
+        <activity android:name=".MedicalReminder" />
+        <activity android:name=".Prediction" />
+        <activity android:name=".MainPage"/>
         <activity android:name=".MainActivity">
 
             <intent-filter>
