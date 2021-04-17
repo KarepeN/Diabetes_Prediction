@@ -31,6 +31,12 @@ Is the adapter class that handles the list of reminders using the Recycler view.
 ## AppDatabase.java
 This is an abstract class which extends the RoomDatabase from the androidx library. This class has methods to build the DB instance and get the appDatabase.
 
+## prediction.java
+in this class you can predict whether you have diabetes or not.
+
+## BmiActivity.java
+in this class,you can calculate body mass index.
+
 
 ## Contributors :
 
