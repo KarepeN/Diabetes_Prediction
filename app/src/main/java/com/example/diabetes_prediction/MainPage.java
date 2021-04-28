@@ -114,9 +114,9 @@ public class MainPage extends AppCompatActivity {
             roomDAO.Insert(reminders);
             List<Reminders> l = roomDAO.getAll();
             reminders = l.get(l.size()-1);
-            Log.e("ID chahiye",reminders.getId()+"");
+            Log.e("ID",reminders.getId()+"");
 
-            Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT+5:30"));
+            Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT-5:30"));
             calendar.setTime(remind);
             calendar.set(Calendar.SECOND,0);
             Intent intent = new Intent(MainPage.this,NotifierAlarm.class);
